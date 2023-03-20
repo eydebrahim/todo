@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="todo-section">
+      <!-- edit input -->
+      <div id="edit-form" class="hidden-edit">
+        <input type="text" id="item-input-edit" placeholder="Enter Edit Task" />
+        <button id="submit-item-btn-eidt">Submit</button>
+      </div>
+      <!-- end  -->
+      <div class="container">
+        <div>
+          <div class="box not-started">
+            <h2 class="heading-secondary">Not Started</h2>
+            <ul id="item-list" class="task-list tasks-list"></ul>
+
+            <div id="add-item-form" class="hidden">
+              <input
+                type="text"
+                id="item-input"
+                placeholder="Enter Your Task"
+              />
+              <button id="submit-item-btn">Submit</button>
+            </div>
+          </div>
+          <button class="btn btn-add">+Add</button>
+        </div>
+
+        <div>
+          <div class="box in-progress">
+            <h2 class="heading-secondary">In Progress</h2>
+            <ul id="item-list" class="task-list tasks-list"></ul>
+          </div>
+          <button class="btn btn-add">+Add</button>
+        </div>
+        <div>
+          <div class="box completed">
+            <h2 class="heading-secondary">Completed</h2>
+            <ul class="task-list"></ul>
+          </div>
+          <button class="btn btn-add">+Add</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
